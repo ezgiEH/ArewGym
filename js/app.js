@@ -10,24 +10,13 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName("slide");
-    let dots = document.getElementsByClassName("dot");
+    const slides = Array.from(document.getElementsByClassName("slide"));
+    const dots = Array.from(document.getElementsByClassName("dot"));
 
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
+    const slideIndex = (n > slides.length) ? 1 : (n < 1) ? slides.length : n;
 
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
+    slides.forEach(slide => slide.style.display = "none");
+    dots.forEach(dot => dot.className = dot.className.replace(" active", ""));
 
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " active";
