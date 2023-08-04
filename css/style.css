@@ -2629,33 +2629,124 @@ ol {
 /* ----------- CONTACT FORM SECTION---------------*/
 .contact__form__section{
   height: 60vh;
-  background: url("/assests/contact-form.png");
+  background-image: url("/assests/contact-form.png");
+  background-color: var(--Gray);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contact__form__content{
+  height: 40vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
 
 .contact__form__text{
-  flex: 1;
+  width: 40%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   color: var(--White);
 }
 
 .contact__form__text p{
   margin: 5px 0;
 }
+.contact__form__text h2{
+  margin: 0;
+  margin-bottom: 10px;
+}
 
+.contact__form__text ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact__form__text ul li{
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact__form__text ul li i{
+  color: var(--Green);
+  font-size: 1em;
+}
 .contact__form{
-  flex: 1;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contact__form form{
+  width:  80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.contact__form form input,
+.contact__form form textarea{
+  width: 100%;
+  height: 40px;
+  font-family: var(--Oxygen);
+  padding: 10px;
+  border: 1px solid var(--Light-Gray);
+  outline: none;
+  background: transparent;
+  color: var(--Light-Gray);
+  font-size: large;
+}
+
+
+.contact__form form input:nth-child(1),
+.contact__form form input:nth-child(2){
+  width: 44.2%;
+}
+
+
+.contact__form form input::placeholder, 
+.contact__form form textarea::placeholder{
+  color: var(--Light-Gray);
+}
+
+.contact__form form input[type="submit"]{
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .contact__form__section {
+    height: auto;
+  }
+  .contact__form__content{
+    flex-direction: column;
+    margin: 5vh 0;
+    height: auto;
+  }
+
+  .contact__form__text,
+  .contact__form,
+  .contact__form form,
+  .contact__form form input:nth-child(1),
+  .contact__form form input:nth-child(2){
+    width: 100%;
+  }
 }
 /* ----------- CONTACT FORM SECTION---------------*/
