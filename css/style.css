@@ -2941,9 +2941,10 @@ h3 {
   font-size: 16px;
 }
 
-.blog__box__title h3:hover{
+.blog__box__title h3:hover {
   color: var(--Purple);
 }
+
 .blog__box__author {
   display: flex;
   align-items: center;
@@ -2968,7 +2969,7 @@ h3 {
 /*---------------BLOG SECTION-----------------*/
 
 /*----------------ARTICLE SECTION-----------------*/
-.article__section{
+.article__section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -2976,19 +2977,23 @@ h3 {
   justify-content: center;
   gap: 40px;
 }
-.article__section__top{
+
+.article__section__top {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 20px;
 }
-.article__section__top h1{
+
+.article__section__top h1 {
   margin: 10px 0;
 }
-.article__section__header{
+
+.article__section__header {
   flex: 3;
 }
-.article__section__author{
+
+.article__section__author {
   flex: 1;
   height: 100%;
   display: flex;
@@ -2996,30 +3001,34 @@ h3 {
   justify-content: flex-end;
   gap: 10px;
 }
-.article__section__author img{
+
+.article__section__author img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.article__section__content{
+.article__section__content {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.article__image{
+
+.article__image {
   width: 100%;
   height: 50%;
 }
-.article__image img{
+
+.article__image img {
   width: 100%;
   height: 50%;
   object-fit: cover;
 }
-.article__text{
+
+.article__text {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -3028,27 +3037,32 @@ h3 {
   text-align: left;
   gap: 10px;
 }
-.article__text p{
+
+.article__text p {
   margin: 10px 0;
   color: var(--Gray);
 }
-.article__text ul , 
+
+.article__text ul,
 .article__text ol {
   padding: 0 0 0 20px;
 }
-.article__text ul li, 
-.article__text ol li{
+
+.article__text ul li,
+.article__text ol li {
   color: var(--Gray);
   margin: 5px 0;
 
 }
-.article__quote{
+
+.article__quote {
   width: 80%;
   background: var(--Purple);
   padding: 60px;
   margin: 10px 0;
 }
-.quote__text{
+
+.quote__text {
   background: var(--Green);
   padding: 40px;
   font-style: italic;
@@ -3056,72 +3070,252 @@ h3 {
   font-weight: 500;
   text-align: center;
 }
-.quote__text p{
+
+.quote__text p {
   color: var(--Black);
 }
+
 @media screen and (max-width: 600px) {
-  .article__section{
+  .article__section {
     height: auto;
     margin-top: 100px;
   }
-  .article__section__top{
+
+  .article__section__top {
     flex-direction: column;
   }
-  .article__section__author{
+
+  .article__section__author {
     display: none;
   }
-  .article__section__content{
+
+  .article__section__content {
     width: 100%;
   }
-  .article__quote{
+
+  .article__quote {
     width: 90%;
     padding: 20px;
   }
-  .quote__text{
+
+  .quote__text {
     padding: 20px;
   }
 }
+
 /*----------------ARTICLE SECTION-----------------*/
 
 
 /*---------------AUTHOR SECTION-----------------*/
-.author__section{
+.author__section {
   background: var(--Light-Gray);
   min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.author__section__box{
+
+.author__section__box {
   width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
 }
-.author__section__box img{
+
+.author__section__box img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
 }
+
 .author__section__box h4,
-.author__section__box p{
+.author__section__box p {
   margin: 10px 0;
 }
-.author__section__social{
+
+.author__section__social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-.author__section__social i{
+
+.author__section__social i {
   font-size: 24px;
   color: var(--Black);
 }
-.author__section__social i:hover{
+
+.author__section__social i:hover {
   color: var(--Green);
   transform: scale(.9);
 }
+
 /*---------------AUTHOR SECTION-----------------*/
+
+
+/*-------------CONTACT SECTION-----------------*/
+.contact__section {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact__section__content {
+  flex: 1;
+  font-size: 16px;
+}
+
+.contact__section__content p {
+  color: var(--Gray);
+}
+
+.contact__hours {
+  width: 60%;
+}
+
+.contact__hours h3 {
+  border-bottom: 1px solid var(--Light-Gray);
+  margin: 10px 0;
+}
+
+.contact__hours b {
+  color: var(--Dark-Gray);
+}
+
+.contact__section__form {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--Light-Gray);
+}
+
+.contact__section__form h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.contact__section__form p {
+  color: var(--Purple);
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.contact__section__form form {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact__section__form form input,
+.contact__section__form form textarea {
+  width: 100%;
+  height: 30px;
+  font-family: var(--Oxygen);
+  font-size: 16px;
+  padding-inline-start: 10px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+  border: 1px solid var(--Gray);
+  background: transparent;
+}
+
+.contact__section__form form input:focus {
+  outline: 1px solid var(--Purple);
+}
+
+.contact__section__form form button {
+  width: initial;
+  height: initial;
+}
+
+@media screen and (max-width: 600px) {
+  .contact__section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contact__hours,
+  .contact__section__form form {
+    width: 90%;
+  }
+}
+
+/*-------------CONTACT SECTION-----------------*/
+
+/*------------CONTACT INFOS SECTION-----------*/
+.contact__infos__section{
+  min-height: 50vh;
+  background-image: url("/assests/contact-2.png");
+  background-color: var(--Purple);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__infos__boxes{
+  width: 60%;
+  background: var(--Green);
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__infos__box{
+  flex: 1;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__infos__box:first-child,
+.contact__infos__box:nth-child(2){
+  border-right: 1px solid var(--Gray);
+}
+
+.contact__infos__box h3{
+  padding: 10px;
+  border-bottom: 3px solid var(--Dark-Gray);
+  border-radius: 50%;
+}
+
+.contact__infos__box i{
+  color: var(--Black);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact__infos__section{
+    height: auto;
+  }
+  .contact__infos__boxes{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin: 5vh 0;
+  }
+  .contact__infos__box{
+    height: auto;
+    margin: 10px 0;
+  }
+  .contact__infos__box:first-child,
+  .contact__infos__box:nth-child(2){
+    border-right: none;
+  }
+}
+/*------------CONTACT INFOS SECTION-----------*/
