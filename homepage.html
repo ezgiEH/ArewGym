@@ -24,7 +24,7 @@
           <a class="menu__link" href="./homepage.html">Contact</a>
         </div>
         <div class="book__section">
-          <a class="button gray" href="./homepage.html">Book Class</a>
+          <a class="button gray" href="./homepage.html"><p>Book Class</p></a>
         </div>
         <button class="hamburger__icon" onclick="toggleMenu()">
           <span></span>
@@ -49,8 +49,8 @@
             Keep Your Body Fit & Strong
           </h1>
           <div class="hero__buttons">
-            <a class="button green" href="./homepage.html">Start Today</a>
-            <a class="button striped white" href="./homepage.html">About Us</a>
+            <a class="button green" href="./homepage.html"><p>Start Today</p></a>
+            <a class="button striped white" href="./homepage.html"><p>About Us</p></a>
           </div>
         </div>
       </seciton>
@@ -61,52 +61,52 @@
         <header>Classes</header>
         <div class="home__classes__content">
           <div class="home__classes__top">
-            <div class="home__classes__header">
+            <div class="home__classes__header animate__animated animate__fadeInLeft">
               <span class="header__span">Our Training</span>
               <h2>Upcoming Classes</h2>
             </div>
-            <div class="home__classes__button">
-              <a class="button black" href="./homepage.html">More Classes</a>
+            <div class="home__classes__button animate__animated animate__fadeInRight">
+              <a class="button black" href="./homepage.html"><p>More Classes</p></a>
             </div>
           </div>
           <div class="home__classes__bottom container-md">
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="./assests/pilate_training.png"
                   alt="pilates training"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>Pilates Training</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="assests/aerobic_training.png"
                   alt="aerobic training"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>Aerobic Training</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="./assests/crossfit_workout.png"
                   alt="crossfit workout"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>CrossFit Workout</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
           </div>
@@ -115,18 +115,16 @@
       <!-- HOME CLASSES -->
 
       <!-- MARQUEE SECTION -->
-
       <section class="marquee__section">
-        <marquee
-          behavior="scroll"
-          direction="left"
-          scrollamount="20"
-          scrolldelay="1"
-        >
-          * FOCUS ON YOUR <span>FITNESS</span> NOT YOUR LOSS *
-        </marquee>
+        <div class="marquee">
+          <p>
+            * FOCUS ON YOUR <span>FITNESS</span> NOT YOUR LOSS *
+          </p>
+          <p>
+            FOCUS ON YOUR <span>FITNESS</span> NOT YOUR LOSS 
+          </p>
+        </div>
       </section>
-
       <!-- MARQUEE SECTION -->
 
       <!-- ABOUT SECTION -->
@@ -135,7 +133,7 @@
         <div class="home__about__content">
           <div class="home__about__top">
             <div class="home__about__left">
-              <div class="home__about__header">
+              <div class="home__about__header animate__animated animate__fadeInLeft">
                 <span class="header__span">About Us</span>
                 <h2>Respect Your Body, It's the Only One You Get</h2>
                 <p>
@@ -144,7 +142,7 @@
                   point of using Lorem Ipsum is
                 </p>
               </div>
-              <div class="home__about__card">
+              <div class="home__about__card animate__animated animate__fadeIn">
                 <div class="home__about__card__header">
                   <h3>Motivation</h3>
                   <p>
@@ -156,7 +154,7 @@
                   <img src="./assests/motivation.jpg" alt="motivation" />
                 </div>
               </div>
-              <div class="home__about__card">
+              <div class="home__about__card animate__animated animate__fadeIn">
                 <div class="home__about__card__image">
                   <img src="./assests/inspire.png" alt="inspire" />
                 </div>
@@ -519,7 +517,7 @@
                 </ul>
               </div>
               <div class="home__plan__card__body__cta">
-                <a class="button black" href="#">Get Started</a>
+                <a class="button black" href="#"><p>Get Started</p></a>
               </div>
             </div>
           </div>
@@ -547,7 +545,7 @@
                 </ul>
               </div>
               <div class="home__plan__card__body__cta">
-                <a class="button striped" href="#">Get Started</a>
+                <a class="button striped black" href="#"><p>Get Started</p></a>
               </div>
             </div>
           </div>
@@ -572,7 +570,7 @@
                 </ul>
               </div>
               <div class="home__plan__card__body__cta">
-                <a class="button black" href="#">Get Started</a>
+                <a class="button black" href="#"><p>Get Started</p></a>
               </div>
             </div>
           </div>
@@ -601,7 +599,7 @@
               </p>
             </div>
             <div class="home__blog__card__cta">
-              <a class="button striped" href="#">Read More</a>
+              <a class="button striped black" href="#"><p>Read More</p></a>
             </div>
           </div>
 
@@ -619,7 +617,7 @@
               </p>
             </div>
             <div class="home__blog__card__cta">
-              <a class="button striped" href="#">Read More</a>
+              <a class="button striped black" href="#"><p>Read More</p></a>
             </div>
           </div>
 
@@ -638,7 +636,7 @@
               </p>
             </div>
             <div class="home__blog__card__cta">
-              <a class="button green" href="#">Read More</a>
+              <a class="button green" href="#"><p>Read More</p></a>
             </div>
           </div>
         </div>

@@ -12,7 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script src="https://kit.fontawesome.com/01d4a951dc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/01d4a951dc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ArewGym</title>
   </head>
   <body>
@@ -30,7 +33,7 @@
           <a class="menu__link" href="./homepage.html">Contact</a>
         </div>
         <div class="book__section">
-          <a class="button gray" href="./homepage.html">Book Class</a>
+          <a class="button gray" href="./homepage.html"><p>Book Class</p></a>
         </div>
         <button class="hamburger__icon" onclick="toggleMenu()">
           <span></span>
@@ -47,7 +50,7 @@
           <a class="button green" href="./homepage.html">Book a Class</a>
         </div>
       </nav>
-      
+
       <!-- HERO SECTION -->
       <section class="hero-md container-lg">
         <div class="hero__content">
@@ -69,7 +72,9 @@
           </div>
           <div class="trainers__social">
             <a href="#" class="social__link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__link"
+              ><i class="fab fa-instagram"></i
+            ></a>
             <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
@@ -137,82 +142,93 @@
       <section class="contact__form__section container-full">
         <div class="overlay"></div>
         <div class="contact__form__content container-md">
-            <div class="contact__form__text">
-                <h2>Contact us And Join The Team</h2>
-                <p>It is a long established fact  of that a reader will be distracted 
-                    by the readable content of a page when looking at its layout.
-                    point of using Lorem Ipsum is </p>
-                <ul>
-                  <li><i class="fa-solid fa-dumbbell"></i>251 Purple Sunset Avenue</li>
-                  <li><i class="fa-solid fa-dumbbell"></i>Brooklyn, BXY 92101</li>
-                  <li><i class="fa-solid fa-dumbbell"></i>fitnessfit@example.com</li>
-                </ul>
-            </div>
-            <div class="contact__form">
-              <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Subject" />
-                <textarea placeholder="Message"></textarea>
-                <input class="button green" type="submit" value="Start Now" />
-              </form>
-            </div>
+          <div class="contact__form__text">
+            <h2>Contact us And Join The Team</h2>
+            <p>
+              It is a long established fact of that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              point of using Lorem Ipsum is
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-dumbbell"></i>251 Purple Sunset Avenue
+              </li>
+              <li><i class="fa-solid fa-dumbbell"></i>Brooklyn, BXY 92101</li>
+              <li>
+                <i class="fa-solid fa-dumbbell"></i>fitnessfit@example.com
+              </li>
+            </ul>
+          </div>
+          <div class="contact__form">
+            <form>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Message"></textarea>
+              <input class="button green" type="submit" value="Start Now" />
+            </form>
+          </div>
         </div>
       </section>
       <!-- CONTACT FORM SECTION -->
-
 
       <!-- HOME CLASSES -->
       <section class="home__classes__section container-md">
         <header>Classes</header>
         <div class="home__classes__content">
           <div class="home__classes__top">
-            <div class="home__classes__header">
+            <div
+              class="home__classes__header animate__animated animate__fadeInLeft"
+            >
               <span class="header__span">Our Training</span>
               <h2>Upcoming Classes</h2>
             </div>
-            <div class="home__classes__button">
-              <a class="button black" href="./homepage.html">More Classes</a>
+            <div
+              class="home__classes__button animate__animated animate__fadeInRight"
+            >
+              <a class="button black" href="./homepage.html"
+                ><p>More Classes</p></a
+              >
             </div>
           </div>
           <div class="home__classes__bottom container-md">
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="./assests/pilate_training.png"
                   alt="pilates training"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>Pilates Training</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="assests/aerobic_training.png"
                   alt="aerobic training"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>Aerobic Training</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
-            <div class="home__classes__card">
-              <div class="home__classes__card__image">
+            <div class="classes__card">
+              <div class="classes__card__image">
                 <img
                   src="./assests/crossfit_workout.png"
                   alt="crossfit workout"
                 />
               </div>
-              <div class="home__classes__card__content">
+              <div class="classes__card__content">
                 <h3>CrossFit Workout</h3>
                 <p>containing Lorem Ipsum passagesand more recently with</p>
-                <a href="./homepage.html">Learn More</a>
+                <a class="link__item" href="./homepage.html">Learn More</a>
               </div>
             </div>
           </div>
@@ -333,7 +349,7 @@
       <!-- FOOTER SECTION -->
 
       <section class="copywrite__section">
-        <p class="copywrite__text">Copyright © 2023 All rights reserved</p>
+        <p class="copywrite__text">Copyright © 2023 <a href="https://ezgi.fun/">Ezgi EH.</a> All rights reserved</p>
       </section>
     </main>
     <script type="text/javascript" src="/js/app.js"></script>
