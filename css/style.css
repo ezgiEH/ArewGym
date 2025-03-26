@@ -50,6 +50,18 @@ h3 {
   margin: 10px 0;
 }
 
+.section__header{
+  position: absolute;
+  top: 0;
+  right: -15%;
+  font-family: var(--Oxygen);
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px var(--Light-Gray);
+  color: transparent;
+  z-index: -1;
+}
 .header__span {
   font-family: var(--Oxygen);
   color: var(--Purple);
@@ -539,7 +551,7 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .marquee p {
@@ -553,11 +565,10 @@ a:hover {
 
 @keyframes marquee {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
-
   100% {
-    transform: translate3d(-50%, 0, 0);
+      transform: translateX(-50%);
   }
 }
 
@@ -2881,7 +2892,7 @@ table td img {
   justify-content: flex-start;
 }
 
-.blog__section__header {}
+/*.blog__section__header {}*/
 
 .blog__section__content {
   margin: 5vh 0;
@@ -3412,17 +3423,6 @@ h3 {
   display: none !important;
 }
 
-/* .faq__section__box details summary::after{
-  content: "^";
-  position: absolute;
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.faq__section__box details[open] summary:after {
-  transform: rotate(0deg);
-} */
-
 .faq__section__box p {
   color: var(--Gray);
   margin: 10px 0;
@@ -3440,3 +3440,13 @@ h3 {
 }
 
 /*-------------FAQ SECTION-----------------*/
+
+/*-----------COPYWRıTER SECTION-------------*/
+.copywrite__text a{
+  color: var(--Purple);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*-----------COPYWRıTER SECTION-------------*/
